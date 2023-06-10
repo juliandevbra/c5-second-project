@@ -1,14 +1,15 @@
 import './App.css'
-import AxiosGet from './Components/AxiosGet'
-import FetchApi from './Components/FetchApi'
+import RickAndMorty from './Components/RickAndMorty'
+import Navbar from './Components/Navbar'
+
 
 function App() {
 
 
   return (
     <>
-      {/* <FetchApi/> */}
-      <AxiosGet/>
+      <Navbar/>
+      <RickAndMorty/>
     </>
   )
 }
