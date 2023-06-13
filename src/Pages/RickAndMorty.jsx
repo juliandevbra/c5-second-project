@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const RickAndMorty = () => {
     const [personajes, setPersonajes] = useState([])
@@ -14,8 +15,7 @@ const RickAndMorty = () => {
     <div>
       {personajes.map(personaje => (
         <div key={personaje.id}>
-          <h3>{personaje.name}</h3>
-          <img src={personaje.image} alt="" />
+          <Link to={`/personaje/${personaje.id}`}><h3>{personaje.name}</h3></Link>
         </div>
       ))}
     </div>
