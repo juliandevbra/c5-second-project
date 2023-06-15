@@ -3,8 +3,6 @@ export const routes = {
     contact: 'contacto',
     about: 'acercadenos',
     recipes: 'recetas',
-    detail: 'detalle',
-    characters: '/listadepersonajes',
-    singleCharacter: '/personaje/:id',
+    detail: 'detalle/:id',
     pageNotFound: '*'
 }

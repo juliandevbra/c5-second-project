@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link to={routes.home}><h4 className='link'>Home</h4></Link>
             <Link to={routes.contact}><h4 className='link'>Contact</h4></Link>
             <Link to={routes.about}><h4 className='link'>About</h4></Link>
-            <Link to={routes.characters}><h4 className='link'>Personajes</h4></Link>
+            <Link to={routes.recipes}><h4 className='link'>Recetas</h4></Link>
         </div>
         <input className='search' type="text" />
     </div>
