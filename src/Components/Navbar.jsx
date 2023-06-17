@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { useRecipeStates } from '../Context/Context'
 import { routes } from '../utils/routes'
 
 
 const Navbar = () => {
-
+  const {setSearch} = useRecipeStates()
   const navigate = useNavigate()
 
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
             <Link to={routes.about}><h4 className='link'>About</h4></Link>
             <Link to={routes.recipes}><h4 className='link'>Recetas</h4></Link>
         </div>
-        <input className='search' type="text" />
+        <input type="text" onBlur={(e) => setSearch(e.target.value)} />
     </div>
   )
 }

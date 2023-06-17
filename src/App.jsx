@@ -9,21 +9,12 @@ import { routes } from './utils/routes'
 import Recipes from './Pages/Recipes'
 import Detail from './Pages/Detail'
 import Layout from './Layout/Layout'
-import ParentComponent from './Clase 18/ParentComponent'
-import LoboEstepario from './Clase 18/LoboEstepario'
-import { useState } from 'react'
-import ChildComponent from './Clase 18/ChildComponent'
 
 function App() {
 
-  const [salario, setSalario] = useState(150000)
-
   return (
     <>
-      <ParentComponent salario={salario}/>
-      <LoboEstepario salario={salario}/>
-
-      {/* <Routes>
+      <Routes>
         <Route path='/' element={<Layout/>}>
           <Route path={routes.home} element={<Home/>}/>
           <Route path={routes.contact} element={<Contact/>}/> 
@@ -32,7 +23,7 @@ function App() {
           <Route path={routes.detail} element={<Detail/>}/>
           <Route path={routes.pageNotFound} element={<PageNotFound/>}/>
         </Route>
-      </Routes> */}
+      </Routes>
     </>
   )
 }
