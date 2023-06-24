@@ -21,6 +21,7 @@ const Navbar = () => {
             <Link to={routes.contact}><h4 className='link'>Contact</h4></Link>
             <Link to={routes.about}><h4 className='link'>About</h4></Link>
             <Link to={routes.recipes}><h4 className='link'>Recetas</h4></Link>
+            <Link to={routes.favs}><h4 className='link'>Favs</h4></Link>
         </div>
         <input type="text" onBlur={(e) => setSearch(e.target.value)} />
         <button onClick={logout}>Logout</button>

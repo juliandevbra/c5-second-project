@@ -7,7 +7,8 @@ import { useRecipeStates } from '../Context/Context'
 
 const Detail = () => {
   const [detail, setDetail] = useState({})
-  const {favs, setFavs} = useRecipeStates()
+  const {dispatch} = useRecipeStates()
+  // const {favs, setFavs} = useRecipeStates()
   const params = useParams()
   const apiKey = '68d481a0fbc340308fbf934f836ee8c6'
   const url = `https://api.spoonacular.com/recipes/${params.id}/information?apiKey=${apiKey}`
@@ -22,8 +23,9 @@ const Detail = () => {
       Detalle n° {params.id}
       <h2>{detail.title}</h2>
       <img src={detail.image} alt="" />
-      <button
-        onClick={() => setFavs([...favs, detail])}
+      <button 
+          onClick={() => dispatch({type: 'LIKE', payload: detail})}
+        // onClick={() => setFavs([...favs, detail])}
       >⭐</button>
     </div>
   )

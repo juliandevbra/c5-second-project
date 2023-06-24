@@ -4,5 +4,6 @@ export const routes = {
     about: 'acercadenos',
     recipes: 'recetas',
     detail: 'detalle/:id',
+    favs: 'favs',
     pageNotFound: '*'
 }

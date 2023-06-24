@@ -7,9 +7,9 @@ import Context from './Context/Context.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-        <BrowserRouter>
+    <BrowserRouter>
             <Context>
                 <App />
             </Context>
-        </BrowserRouter>
+    </BrowserRouter>
 )
